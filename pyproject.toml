@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "chroma-toolkit"
+version = "0.1.0"
+description = "The swiss-army knife for Chroma"
+authors = ["Trayan Azarov <trayan.azarov@amikos.tech>"]
+readme = "README.md"
+packages = [{include = "chroma_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.9.0"}
+chromadb = "^0.4.12"
+datasets = "^2.14.5"
+openai = "^0.28.1"
+toml = "^0.10.2"
+posthog = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
